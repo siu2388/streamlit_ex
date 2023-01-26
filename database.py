@@ -1,12 +1,17 @@
-import os
+# import os
+
+# from deta import Deta  # pip install deta
+# from dotenv import load_dotenv  # pip install python-dotenv
+
+
+# # load the environment variables
+# load_dotenv(".env")
+# DETA_KEY = os.getenv('DETA_KEY')
 
 from deta import Deta  # pip install deta
-from dotenv import load_dotenv  # pip install python-dotenv
 
+DETA_KEY = "c0f58ysq_SEoRv7hE5wFeVsb4LfCoM4Fk4YDuu9Dr"
 
-# load the environment variables
-load_dotenv(".env")
-DETA_KEY = os.getenv('DETA_KEY')
 
 # initailize with a project key
 deta = Deta(DETA_KEY)
@@ -37,4 +42,4 @@ def get_period(period):
     return db.get(period)
 
 
-#deta.sh siu2388 Govlchfhd0! Dashboard 
+# deta.sh siu2388 Govlchfhd0! Dashboard
