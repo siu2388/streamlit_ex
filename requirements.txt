@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-pandas
-plotly
-
-=======
 pandas
 plotly
 calender
 datetime
 
->>>>>>> f0372352d30a26bb1eb01458af56f42d9425c182
