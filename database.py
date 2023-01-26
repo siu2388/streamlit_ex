@@ -1,12 +1,18 @@
-from deta import Deta  # pip install deta
+import os
 
-DETA_KEY = 'c0f58ysq_SEoRv7hE5wFeVsb4LfCoM4Fk4YDuu9Dr'
+from deta import Deta  # pip install deta
+from dotenv import load_dotenv  # pip install python-dotenv
+
+
+# load the environment variables
+load_dotenv(".env")
+DETA_KEY = os.getenv('DETA_KEY')
 
 # initailize with a project key
 deta = Deta(DETA_KEY)
 
 # this is how to create/connect a database
-db = data.Base('monthly_report')
+db = deta.Base('monthly_report')
 
 # 데이터베이스에 특정 기간의 값을 삽입
 
@@ -29,3 +35,6 @@ def fetch_all_periods():
 def get_period(period):
     """If not found, the function will return None"""
     return db.get(period)
+
+
+#deta.sh siu2388 Govlchfhd0! Dashboard 
